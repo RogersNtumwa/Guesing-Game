@@ -32,12 +32,12 @@ const newgame = () => {
 };
 newgame();
 
-document.querySelector(".btn-roll").addEventListener("click", function() {
+document.querySelector(".btn-roll").addEventListener("click", function () {
   if (gamePlaying) {
     var dice = Math.floor(Math.random() * 6) + 1;
     var diceDOM = document.querySelector(".dice");
     diceDOM.style.display = "block";
-    diceDOM.src = "dice-" + dice + ".png";
+    diceDOM.src = "/images/dice-" + dice + ".png";
 
     if (dice !== 1) {
       //add to the global score
